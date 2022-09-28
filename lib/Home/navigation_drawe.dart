@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:goshop/Error.dart';
 import 'package:goshop/Home/home.dart';
+import 'package:goshop/Screens/edit_profile.dart';
 import 'package:goshop/Screens/login.dart';
 import 'package:goshop/Screens/profile.dart';
 import 'package:goshop/Screens/settingapp.dart';
@@ -71,24 +72,29 @@ class navigation_drawer extends StatelessWidget {
               onClicked: () => SelectedItrem(context, 3),
             ),
             items(
+              text: "Edit profile",
+              icon: Icons.featured_play_list,
+              onClicked: () => SelectedItrem(context, 4),
+            ),
+            items(
               text: "Profile",
               icon: Icons.person,
-              onClicked: () => SelectedItrem(context, 4),
+              onClicked: () => SelectedItrem(context, 5),
             ),
             items(
               text: "App setting",
               icon: Icons.settings,
-              onClicked: () => SelectedItrem(context, 5),
+              onClicked: () => SelectedItrem(context, 6),
             ),
             items(
               text: "Help & FAQs",
               icon: Icons.help,
-              onClicked: () => SelectedItrem(context, 6),
+              onClicked: () => SelectedItrem(context, 7),
             ),
             items(
               text: "Logout",
               icon: Icons.settings,
-              onClicked: () => SelectedItrem(context, 7),
+              onClicked: () => SelectedItrem(context, 8),
             ),
           ],
         ),
@@ -135,22 +141,26 @@ void SelectedItrem(BuildContext context, int index) {
       break;
     case 3:
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => FirstStepScreen()));
+          .push(MaterialPageRoute(builder: (context) => Error404()));
       break;
     case 4:
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => profile()));
+          .push(MaterialPageRoute(builder: (context) => editprofile()));
       break;
     case 5:
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => settingapp()));
+          .push(MaterialPageRoute(builder: (context) => profile()));
       break;
     case 6:
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => settingapp()));
+      break;
+    case 7:
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (context) => Error404()));
       break;
 
-    case 7:
+    case 8:
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (context) => MyLogin()));
       break;

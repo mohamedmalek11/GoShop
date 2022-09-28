@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:goshop/checkout/checkout2.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -286,3 +287,4 @@ class FirstStepScreen extends StatelessWidget {
     );
   }
 }
+*/

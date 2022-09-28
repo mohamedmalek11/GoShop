@@ -1,10 +1,10 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:goshop/checkout/first_step.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:hexcolor/hexcolor_web.dart';
 import 'package:steps_indicator/steps_indicator.dart';
-import 'package:test11/components.dart';
-import 'package:test11/first_step.dart';
+
 
 class check_out2 extends StatelessWidget {
   check_out2({Key? key}) : super(key: key);
@@ -315,3 +315,4 @@ class check_out2 extends StatelessWidget {
     );
   }
 }
+*/
